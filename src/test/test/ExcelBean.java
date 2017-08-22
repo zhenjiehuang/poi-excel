@@ -8,6 +8,7 @@ import com.poi.excel.base.Type;
 //@Title
 public class ExcelBean {
 
+
 	@ExcelColumn(columnNum = 0, columnName = "测试String", columnType = Type.String)
 	private String col1;
 

@@ -85,7 +85,7 @@ public class ImportExcel<T> extends BaseExcel<T> {
 				// 得到sheet
 				Sheet sheet = workbook.getSheetAt(s);
 				// 得到数据行数
-				int rowNum = sheet.getPhysicalNumberOfRows();
+                int rowNum = sheet.getLastRowNum();
 				if (rowNum != 0) {
 					// 遍历数据
 					initRows(sheet, rowNum);
